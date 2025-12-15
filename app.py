@@ -1,12 +1,11 @@
 from pathlib import Path
-
 import numpy as np
 import pandas as pd
 import streamlit as st
 
 DATA_FILE = Path("data/labor_data.csv")
 
-# Map series to units so charts can be grouped with sensible Y-axis ranges
+# Map each series to its unit so charts can be grouped correctly
 UNIT_MAP = {
     "Total Nonfarm Employment": "Employment (thousands)",
     "Manufacturing Employment": "Employment (thousands)",
@@ -28,9 +27,6 @@ st.caption("Data source: U.S. Bureau of Labor Statistics (BLS)")
 
 @st.cache_data(show_spinner=False)
 def load_data(path: Path) -> pd.DataFrame:
-    """
-    Load and clean the BLS data from CSV using pandas.
-    """
     df = pd.read_csv(path, parse_dates=["date"])
     df = df.dropna(subset=["date", "value"])
     df["value"] = pd.to_numeric(df["value"], errors="coerce")
@@ -39,22 +35,23 @@ def load_data(path: Path) -> pd.DataFrame:
     return df
 
 
+# Stop early if data does not exist
 if not DATA_FILE.exists():
     st.warning("No data found. Please run `python collect.py` first.")
     st.stop()
 
 df = load_data(DATA_FILE)
 
-# Add unit labels (used to split charts)
-df["unit"] = df["series_name"].map(UNIT_MAP).fillna("Other")
+# Add unit column
+df["unit"] = df["series_name"].map(UNIT_MAP)
 
-# Compute year-over-year change on the full dataset (so it works even when filtering later)
-df["yoy_pct"] = df.groupby("series_id")["value"].pct_change(periods=12) * 100.0
+# Compute YoY change on full dataset
+df["yoy_pct"] = df.groupby("series_id")["value"].pct_change(12) * 100
 
-# Precompute a simple month label for charts & tables
+# Month label for charts & tables
 df["Month"] = df["date"].dt.strftime("%Y-%m")
 
-# Sidebar filters
+# ---------------- Sidebar ----------------
 st.sidebar.header("Filters")
 
 latest_overall_date = df["date"].max()
@@ -67,10 +64,8 @@ time_window = st.sidebar.selectbox(
 
 series_options = sorted(df["series_name"].unique().tolist())
 
-# Smarter default selection (less clutter, still representative)
 default_series = [
-    s
-    for s in [
+    s for s in [
         "Total Nonfarm Employment",
         "Unemployment Rate",
         "Labor Force Participation Rate",
@@ -80,7 +75,7 @@ default_series = [
 ]
 
 selected_series = st.sidebar.multiselect(
-    "Select series to display",
+    "Select series",
     options=series_options,
     default=default_series if default_series else series_options,
 )
@@ -95,7 +90,7 @@ view_mode = st.sidebar.radio(
     index=0,
 )
 
-# Apply time window and series filters
+# --------------- Apply filters ---------------
 if time_window == "Last 12 months":
     cutoff = latest_overall_date - pd.DateOffset(months=12)
     work_df = df[df["date"] >= cutoff].copy()
@@ -105,10 +100,10 @@ else:
 work_df = work_df[work_df["series_name"].isin(selected_series)].copy()
 
 if work_df.empty:
-    st.warning("No data for the selected filters.")
+    st.warning("No data for selected filters.")
     st.stop()
 
-# Prepare data for plotting
+# --------------- Prepare plotting data ---------------
 plot_df = work_df.copy()
 
 if view_mode == "Year-over-year change (%)":
@@ -120,32 +115,52 @@ else:
     plot_df["plot_unit"] = plot_df["unit"]
 
 plot_df = plot_df.sort_values(["date", "series_name"])
-plot_df["Month"] = plot_df["date"].dt.strftime("%Y-%m")
 
+# ---------------- Charts ----------------
 st.subheader("Trends over time")
 
-# Separate charts so Y-axis ranges are meaningful
-for unit_name, g in plot_df.groupby("plot_unit"):
-    if g.empty:
-        continue
+if view_mode == "Year-over-year change (%)":
+    # ONE chart for YoY
+    yoy_chart = plot_df.pivot(
+        index="Month", columns="series_name", values="plot_value"
+    )
 
-    chart_data = g.pivot(index="Month", columns="series_name", values="plot_value")
-
-    st.markdown(f"**{unit_name}**")
     st.line_chart(
-        chart_data,
+        yoy_chart,
         x_label="Month (YYYY-MM)",
-        y_label=unit_name,
+        y_label="Percent (YoY)",
         use_container_width=True,
     )
 
-# Latest month summary (levels + YoY)
+else:
+    # Levels mode: separate charts by unit
+    for unit_name, g in plot_df.groupby("plot_unit"):
+        if g.empty:
+            continue
+
+        chart_data = g.pivot(
+            index="Month", columns="series_name", values="plot_value"
+        )
+
+        if chart_data.shape[1] == 0:
+            continue
+
+        st.markdown(f"**{unit_name}**")
+        st.line_chart(
+            chart_data,
+            x_label="Month (YYYY-MM)",
+            y_label=unit_name,
+            use_container_width=True,
+        )
+
+# --------------- Latest month summary ---------------
 latest_shown_date = work_df["date"].max()
 latest_label = latest_shown_date.strftime("%Y-%m")
 st.subheader(f"Latest month shown: {latest_label}")
 
 latest_subset = df[
-    (df["date"] == latest_shown_date) & (df["series_name"].isin(selected_series))
+    (df["date"] == latest_shown_date)
+    & (df["series_name"].isin(selected_series))
 ].copy()
 
 latest_levels = latest_subset.set_index("series_name")["value"].reindex(selected_series)
@@ -158,31 +173,23 @@ for i, name in enumerate(selected_series):
     yoy = latest_yoy.get(name, np.nan)
 
     if pd.isna(level):
-        display_value = "N/A"
+        value_text = "N/A"
         delta_text = ""
     else:
-        display_value = f"{level:,.2f}"
-        delta_text = "" if pd.isna(yoy) else f"{yoy:+.2f}% vs. 12 months ago"
+        value_text = f"{level:,.2f}"
+        delta_text = "" if pd.isna(yoy) else f"{yoy:+.2f}% vs 12 months ago"
 
     with cols[i % len(cols)]:
-        st.metric(label=name, value=display_value, delta=delta_text)
+        st.metric(label=name, value=value_text, delta=delta_text)
 
-# Data table and CSV download
+# --------------- Data table & download ---------------
 st.divider()
 st.subheader("Data table")
 
 table_df = work_df.sort_values(["series_name", "date"]).copy()
 
 table_df = table_df[
-    [
-        "series_name",
-        "Month",
-        "value",
-        "yoy_pct",
-        "periodName",
-        "year",
-        "series_id",
-    ]
+    ["series_name", "Month", "value", "yoy_pct", "periodName", "year", "series_id"]
 ]
 
 table_df = table_df.rename(
