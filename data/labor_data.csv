@@ -1,15 +1,28 @@
 series_name,series_id,date,value,period,periodName,year
-Average Hourly Earnings for Private Employees,CES0500000003,2023-01-01,33.05,M01,January,2023
-Average Hourly Earnings for Private Employees,CES0500000003,2023-02-01,33.16,M02,February,2023
-Average Hourly Earnings for Private Employees,CES0500000003,2023-03-01,33.28,M03,March,2023
-Average Hourly Earnings for Private Employees,CES0500000003,2023-04-01,33.42,M04,April,2023
-Average Hourly Earnings for Private Employees,CES0500000003,2023-05-01,33.52,M05,May,2023
-Average Hourly Earnings for Private Employees,CES0500000003,2023-06-01,33.69,M06,June,2023
-Average Hourly Earnings for Private Employees,CES0500000003,2023-07-01,33.84,M07,July,2023
-Average Hourly Earnings for Private Employees,CES0500000003,2023-08-01,33.89,M08,August,2023
-Average Hourly Earnings for Private Employees,CES0500000003,2023-09-01,33.99,M09,September,2023
-Average Hourly Earnings for Private Employees,CES0500000003,2023-10-01,34.07,M10,October,2023
-Average Hourly Earnings for Private Employees,CES0500000003,2023-11-01,34.19,M11,November,2023
+Total Nonfarm Employment,CES0000000001,2023-12-01,156930.0,M12,December,2023
+Total Nonfarm Employment,CES0000000001,2024-01-01,157049.0,M01,January,2024
+Total Nonfarm Employment,CES0000000001,2024-02-01,157271.0,M02,February,2024
+Total Nonfarm Employment,CES0000000001,2024-03-01,157517.0,M03,March,2024
+Total Nonfarm Employment,CES0000000001,2024-04-01,157635.0,M04,April,2024
+Total Nonfarm Employment,CES0000000001,2024-05-01,157828.0,M05,May,2024
+Total Nonfarm Employment,CES0000000001,2024-06-01,157915.0,M06,June,2024
+Total Nonfarm Employment,CES0000000001,2024-07-01,158003.0,M07,July,2024
+Total Nonfarm Employment,CES0000000001,2024-08-01,158074.0,M08,August,2024
+Total Nonfarm Employment,CES0000000001,2024-09-01,158314.0,M09,September,2024
+Total Nonfarm Employment,CES0000000001,2024-10-01,158358.0,M10,October,2024
+Total Nonfarm Employment,CES0000000001,2024-11-01,158619.0,M11,November,2024
+Total Nonfarm Employment,CES0000000001,2024-12-01,158942.0,M12,December,2024
+Total Nonfarm Employment,CES0000000001,2025-01-01,159053.0,M01,January,2025
+Total Nonfarm Employment,CES0000000001,2025-02-01,159155.0,M02,February,2025
+Total Nonfarm Employment,CES0000000001,2025-03-01,159275.0,M03,March,2025
+Total Nonfarm Employment,CES0000000001,2025-04-01,159433.0,M04,April,2025
+Total Nonfarm Employment,CES0000000001,2025-05-01,159452.0,M05,May,2025
+Total Nonfarm Employment,CES0000000001,2025-06-01,159439.0,M06,June,2025
+Total Nonfarm Employment,CES0000000001,2025-07-01,159511.0,M07,July,2025
+Total Nonfarm Employment,CES0000000001,2025-08-01,159485.0,M08,August,2025
+Total Nonfarm Employment,CES0000000001,2025-09-01,159593.0,M09,September,2025
+Total Nonfarm Employment,CES0000000001,2025-10-01,159488.0,M10,October,2025
+Total Nonfarm Employment,CES0000000001,2025-11-01,159552.0,M11,November,2025
 Average Hourly Earnings for Private Employees,CES0500000003,2023-12-01,34.31,M12,December,2023
 Average Hourly Earnings for Private Employees,CES0500000003,2024-01-01,34.47,M01,January,2024
 Average Hourly Earnings for Private Employees,CES0500000003,2024-02-01,34.54,M02,February,2024
@@ -31,18 +44,33 @@ Average Hourly Earnings for Private Employees,CES0500000003,2025-05-01,36.23,M05
 Average Hourly Earnings for Private Employees,CES0500000003,2025-06-01,36.31,M06,June,2025
 Average Hourly Earnings for Private Employees,CES0500000003,2025-07-01,36.43,M07,July,2025
 Average Hourly Earnings for Private Employees,CES0500000003,2025-08-01,36.58,M08,August,2025
-Average Hourly Earnings for Private Employees,CES0500000003,2025-09-01,36.67,M09,September,2025
-Education and Health Services Employment,CES6500000001,2023-01-01,24882.0,M01,January,2023
-Education and Health Services Employment,CES6500000001,2023-02-01,24953.0,M02,February,2023
-Education and Health Services Employment,CES6500000001,2023-03-01,25024.0,M03,March,2023
-Education and Health Services Employment,CES6500000001,2023-04-01,25105.0,M04,April,2023
-Education and Health Services Employment,CES6500000001,2023-05-01,25223.0,M05,May,2023
-Education and Health Services Employment,CES6500000001,2023-06-01,25313.0,M06,June,2023
-Education and Health Services Employment,CES6500000001,2023-07-01,25448.0,M07,July,2023
-Education and Health Services Employment,CES6500000001,2023-08-01,25568.0,M08,August,2023
-Education and Health Services Employment,CES6500000001,2023-09-01,25638.0,M09,September,2023
-Education and Health Services Employment,CES6500000001,2023-10-01,25732.0,M10,October,2023
-Education and Health Services Employment,CES6500000001,2023-11-01,25847.0,M11,November,2023
+Average Hourly Earnings for Private Employees,CES0500000003,2025-09-01,36.65,M09,September,2025
+Average Hourly Earnings for Private Employees,CES0500000003,2025-10-01,36.81,M10,October,2025
+Average Hourly Earnings for Private Employees,CES0500000003,2025-11-01,36.86,M11,November,2025
+Manufacturing Employment,CES3000000001,2023-12-01,12865.0,M12,December,2023
+Manufacturing Employment,CES3000000001,2024-01-01,12866.0,M01,January,2024
+Manufacturing Employment,CES3000000001,2024-02-01,12853.0,M02,February,2024
+Manufacturing Employment,CES3000000001,2024-03-01,12838.0,M03,March,2024
+Manufacturing Employment,CES3000000001,2024-04-01,12847.0,M04,April,2024
+Manufacturing Employment,CES3000000001,2024-05-01,12849.0,M05,May,2024
+Manufacturing Employment,CES3000000001,2024-06-01,12839.0,M06,June,2024
+Manufacturing Employment,CES3000000001,2024-07-01,12840.0,M07,July,2024
+Manufacturing Employment,CES3000000001,2024-08-01,12800.0,M08,August,2024
+Manufacturing Employment,CES3000000001,2024-09-01,12800.0,M09,September,2024
+Manufacturing Employment,CES3000000001,2024-10-01,12750.0,M10,October,2024
+Manufacturing Employment,CES3000000001,2024-11-01,12770.0,M11,November,2024
+Manufacturing Employment,CES3000000001,2024-12-01,12760.0,M12,December,2024
+Manufacturing Employment,CES3000000001,2025-01-01,12755.0,M01,January,2025
+Manufacturing Employment,CES3000000001,2025-02-01,12763.0,M02,February,2025
+Manufacturing Employment,CES3000000001,2025-03-01,12764.0,M03,March,2025
+Manufacturing Employment,CES3000000001,2025-04-01,12764.0,M04,April,2025
+Manufacturing Employment,CES3000000001,2025-05-01,12753.0,M05,May,2025
+Manufacturing Employment,CES3000000001,2025-06-01,12736.0,M06,June,2025
+Manufacturing Employment,CES3000000001,2025-07-01,12727.0,M07,July,2025
+Manufacturing Employment,CES3000000001,2025-08-01,12716.0,M08,August,2025
+Manufacturing Employment,CES3000000001,2025-09-01,12711.0,M09,September,2025
+Manufacturing Employment,CES3000000001,2025-10-01,12702.0,M10,October,2025
+Manufacturing Employment,CES3000000001,2025-11-01,12697.0,M11,November,2025
 Education and Health Services Employment,CES6500000001,2023-12-01,25932.0,M12,December,2023
 Education and Health Services Employment,CES6500000001,2024-01-01,26031.0,M01,January,2024
 Education and Health Services Employment,CES6500000001,2024-02-01,26127.0,M02,February,2024
@@ -63,18 +91,10 @@ Education and Health Services Employment,CES6500000001,2025-04-01,27208.0,M04,Ap
 Education and Health Services Employment,CES6500000001,2025-05-01,27278.0,M05,May,2025
 Education and Health Services Employment,CES6500000001,2025-06-01,27329.0,M06,June,2025
 Education and Health Services Employment,CES6500000001,2025-07-01,27409.0,M07,July,2025
-Education and Health Services Employment,CES6500000001,2025-08-01,27452.0,M08,August,2025
-Education and Health Services Employment,CES6500000001,2025-09-01,27511.0,M09,September,2025
-Labor Force Participation Rate,LNS11300000,2023-01-01,62.4,M01,January,2023
-Labor Force Participation Rate,LNS11300000,2023-02-01,62.5,M02,February,2023
-Labor Force Participation Rate,LNS11300000,2023-03-01,62.6,M03,March,2023
-Labor Force Participation Rate,LNS11300000,2023-04-01,62.6,M04,April,2023
-Labor Force Participation Rate,LNS11300000,2023-05-01,62.6,M05,May,2023
-Labor Force Participation Rate,LNS11300000,2023-06-01,62.6,M06,June,2023
-Labor Force Participation Rate,LNS11300000,2023-07-01,62.6,M07,July,2023
-Labor Force Participation Rate,LNS11300000,2023-08-01,62.8,M08,August,2023
-Labor Force Participation Rate,LNS11300000,2023-09-01,62.7,M09,September,2023
-Labor Force Participation Rate,LNS11300000,2023-10-01,62.7,M10,October,2023
+Education and Health Services Employment,CES6500000001,2025-08-01,27443.0,M08,August,2025
+Education and Health Services Employment,CES6500000001,2025-09-01,27499.0,M09,September,2025
+Education and Health Services Employment,CES6500000001,2025-10-01,27558.0,M10,October,2025
+Education and Health Services Employment,CES6500000001,2025-11-01,27623.0,M11,November,2025
 Labor Force Participation Rate,LNS11300000,2023-11-01,62.8,M11,November,2023
 Labor Force Participation Rate,LNS11300000,2023-12-01,62.5,M12,December,2023
 Labor Force Participation Rate,LNS11300000,2024-01-01,62.5,M01,January,2024
@@ -98,82 +118,7 @@ Labor Force Participation Rate,LNS11300000,2025-06-01,62.3,M06,June,2025
 Labor Force Participation Rate,LNS11300000,2025-07-01,62.2,M07,July,2025
 Labor Force Participation Rate,LNS11300000,2025-08-01,62.3,M08,August,2025
 Labor Force Participation Rate,LNS11300000,2025-09-01,62.4,M09,September,2025
-Manufacturing Employment,CES3000000001,2023-01-01,12897.0,M01,January,2023
-Manufacturing Employment,CES3000000001,2023-02-01,12900.0,M02,February,2023
-Manufacturing Employment,CES3000000001,2023-03-01,12890.0,M03,March,2023
-Manufacturing Employment,CES3000000001,2023-04-01,12889.0,M04,April,2023
-Manufacturing Employment,CES3000000001,2023-05-01,12874.0,M05,May,2023
-Manufacturing Employment,CES3000000001,2023-06-01,12877.0,M06,June,2023
-Manufacturing Employment,CES3000000001,2023-07-01,12863.0,M07,July,2023
-Manufacturing Employment,CES3000000001,2023-08-01,12856.0,M08,August,2023
-Manufacturing Employment,CES3000000001,2023-09-01,12869.0,M09,September,2023
-Manufacturing Employment,CES3000000001,2023-10-01,12836.0,M10,October,2023
-Manufacturing Employment,CES3000000001,2023-11-01,12858.0,M11,November,2023
-Manufacturing Employment,CES3000000001,2023-12-01,12865.0,M12,December,2023
-Manufacturing Employment,CES3000000001,2024-01-01,12866.0,M01,January,2024
-Manufacturing Employment,CES3000000001,2024-02-01,12853.0,M02,February,2024
-Manufacturing Employment,CES3000000001,2024-03-01,12838.0,M03,March,2024
-Manufacturing Employment,CES3000000001,2024-04-01,12847.0,M04,April,2024
-Manufacturing Employment,CES3000000001,2024-05-01,12849.0,M05,May,2024
-Manufacturing Employment,CES3000000001,2024-06-01,12839.0,M06,June,2024
-Manufacturing Employment,CES3000000001,2024-07-01,12840.0,M07,July,2024
-Manufacturing Employment,CES3000000001,2024-08-01,12800.0,M08,August,2024
-Manufacturing Employment,CES3000000001,2024-09-01,12800.0,M09,September,2024
-Manufacturing Employment,CES3000000001,2024-10-01,12750.0,M10,October,2024
-Manufacturing Employment,CES3000000001,2024-11-01,12770.0,M11,November,2024
-Manufacturing Employment,CES3000000001,2024-12-01,12760.0,M12,December,2024
-Manufacturing Employment,CES3000000001,2025-01-01,12755.0,M01,January,2025
-Manufacturing Employment,CES3000000001,2025-02-01,12763.0,M02,February,2025
-Manufacturing Employment,CES3000000001,2025-03-01,12764.0,M03,March,2025
-Manufacturing Employment,CES3000000001,2025-04-01,12764.0,M04,April,2025
-Manufacturing Employment,CES3000000001,2025-05-01,12753.0,M05,May,2025
-Manufacturing Employment,CES3000000001,2025-06-01,12736.0,M06,June,2025
-Manufacturing Employment,CES3000000001,2025-07-01,12727.0,M07,July,2025
-Manufacturing Employment,CES3000000001,2025-08-01,12712.0,M08,August,2025
-Manufacturing Employment,CES3000000001,2025-09-01,12706.0,M09,September,2025
-Total Nonfarm Employment,CES0000000001,2023-01-01,154780.0,M01,January,2023
-Total Nonfarm Employment,CES0000000001,2023-02-01,155086.0,M02,February,2023
-Total Nonfarm Employment,CES0000000001,2023-03-01,155171.0,M03,March,2023
-Total Nonfarm Employment,CES0000000001,2023-04-01,155387.0,M04,April,2023
-Total Nonfarm Employment,CES0000000001,2023-05-01,155614.0,M05,May,2023
-Total Nonfarm Employment,CES0000000001,2023-06-01,155871.0,M06,June,2023
-Total Nonfarm Employment,CES0000000001,2023-07-01,156019.0,M07,July,2023
-Total Nonfarm Employment,CES0000000001,2023-08-01,156176.0,M08,August,2023
-Total Nonfarm Employment,CES0000000001,2023-09-01,156334.0,M09,September,2023
-Total Nonfarm Employment,CES0000000001,2023-10-01,156520.0,M10,October,2023
-Total Nonfarm Employment,CES0000000001,2023-11-01,156661.0,M11,November,2023
-Total Nonfarm Employment,CES0000000001,2023-12-01,156930.0,M12,December,2023
-Total Nonfarm Employment,CES0000000001,2024-01-01,157049.0,M01,January,2024
-Total Nonfarm Employment,CES0000000001,2024-02-01,157271.0,M02,February,2024
-Total Nonfarm Employment,CES0000000001,2024-03-01,157517.0,M03,March,2024
-Total Nonfarm Employment,CES0000000001,2024-04-01,157635.0,M04,April,2024
-Total Nonfarm Employment,CES0000000001,2024-05-01,157828.0,M05,May,2024
-Total Nonfarm Employment,CES0000000001,2024-06-01,157915.0,M06,June,2024
-Total Nonfarm Employment,CES0000000001,2024-07-01,158003.0,M07,July,2024
-Total Nonfarm Employment,CES0000000001,2024-08-01,158074.0,M08,August,2024
-Total Nonfarm Employment,CES0000000001,2024-09-01,158314.0,M09,September,2024
-Total Nonfarm Employment,CES0000000001,2024-10-01,158358.0,M10,October,2024
-Total Nonfarm Employment,CES0000000001,2024-11-01,158619.0,M11,November,2024
-Total Nonfarm Employment,CES0000000001,2024-12-01,158942.0,M12,December,2024
-Total Nonfarm Employment,CES0000000001,2025-01-01,159053.0,M01,January,2025
-Total Nonfarm Employment,CES0000000001,2025-02-01,159155.0,M02,February,2025
-Total Nonfarm Employment,CES0000000001,2025-03-01,159275.0,M03,March,2025
-Total Nonfarm Employment,CES0000000001,2025-04-01,159433.0,M04,April,2025
-Total Nonfarm Employment,CES0000000001,2025-05-01,159452.0,M05,May,2025
-Total Nonfarm Employment,CES0000000001,2025-06-01,159439.0,M06,June,2025
-Total Nonfarm Employment,CES0000000001,2025-07-01,159511.0,M07,July,2025
-Total Nonfarm Employment,CES0000000001,2025-08-01,159507.0,M08,August,2025
-Total Nonfarm Employment,CES0000000001,2025-09-01,159626.0,M09,September,2025
-Unemployment Rate,LNS14000000,2023-01-01,3.5,M01,January,2023
-Unemployment Rate,LNS14000000,2023-02-01,3.6,M02,February,2023
-Unemployment Rate,LNS14000000,2023-03-01,3.5,M03,March,2023
-Unemployment Rate,LNS14000000,2023-04-01,3.4,M04,April,2023
-Unemployment Rate,LNS14000000,2023-05-01,3.6,M05,May,2023
-Unemployment Rate,LNS14000000,2023-06-01,3.6,M06,June,2023
-Unemployment Rate,LNS14000000,2023-07-01,3.5,M07,July,2023
-Unemployment Rate,LNS14000000,2023-08-01,3.7,M08,August,2023
-Unemployment Rate,LNS14000000,2023-09-01,3.8,M09,September,2023
-Unemployment Rate,LNS14000000,2023-10-01,3.9,M10,October,2023
+Labor Force Participation Rate,LNS11300000,2025-11-01,62.5,M11,November,2025
 Unemployment Rate,LNS14000000,2023-11-01,3.7,M11,November,2023
 Unemployment Rate,LNS14000000,2023-12-01,3.8,M12,December,2023
 Unemployment Rate,LNS14000000,2024-01-01,3.7,M01,January,2024
@@ -197,3 +142,4 @@ Unemployment Rate,LNS14000000,2025-06-01,4.1,M06,June,2025
 Unemployment Rate,LNS14000000,2025-07-01,4.2,M07,July,2025
 Unemployment Rate,LNS14000000,2025-08-01,4.3,M08,August,2025
 Unemployment Rate,LNS14000000,2025-09-01,4.4,M09,September,2025
+Unemployment Rate,LNS14000000,2025-11-01,4.6,M11,November,2025
